@@ -1,0 +1,119 @@
+@import "../var";
+@import "../mixin";
+.main-header {
+  width: 100%;
+  height: 80px;
+  background: $main_color;
+  display: flex;
+  justify-content: center;
+  font-family: "Gosanja";
+  .main-header__wrap {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding: 0 30px;
+    .header-logo {
+      width: 60px;
+      height: 60px;
+      display: block;
+      .header-logo img {
+        width: 100%;
+      }
+    }
+    .main-header__nav {
+      margin-left: 70px;
+      width: 50%;
+      ul {
+        display: flex;
+        gap: 80px;
+        li {
+          a {
+            display: block;
+            line-height: 80px;
+          }
+        }
+      }
+    }
+    .main-actionContainer {
+      display: flex;
+      width: 50%;
+      height: 100%;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 1.2rem;
+      > div {
+        width: 40px;
+        height: 40px;
+        > div {
+          @include fixmodal();
+          display: none;
+        }
+        button {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .main-searchContainer {
+        background: #fff;
+        border-radius: 50%;
+        // position: relative;
+        .main-search__modal {
+          .search-Posdiv {
+            position: relative;
+            height: 80px;
+            .main-search-form {
+              position: absolute;
+              top: 20px;
+              right: 155px;
+              width: 330px;
+              height: 40px;
+              background: #fff;
+              border-radius: 30px;
+              form {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                button {
+                  padding: 10px;
+                  width: 40px;
+                }
+                input {
+                  width: calc(100% - 80px);
+                  &:focus {
+                    outline: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    height: 60px;
+    .main-header__wrap {
+      padding: 0 10px;
+      .header-logo {
+        width: 40px;
+        height: 40px;
+      }
+      .main-header__nav {
+        margin-left: 20px;
+        ul {
+          li {
+            a {
+              line-height: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//  footer
+.footer {
+  position: relative;
+  padding: 0 30px;
+}

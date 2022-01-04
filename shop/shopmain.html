@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEGO-SHOP MAIN</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+  </head>
+  <body>
+    <header id="main-header" class="main-header">
+      <div class="main-header__wrap">
+        <a href="../index.html" class="header-logo"><img src="../imgs/icon/logo.svg" alt="" /></a>
+
+        <nav class="main-header__nav">
+          <ul class="main-menu">
+            <li><a href="#">레고 제품</a></li>
+            <li><a href="#">레고 브랜드 소개</a></li>
+            <li><a href="#">고객 지원</a></li>
+          </ul>
+        </nav>
+
+        <div class="main-actionContainer">
+          <div class="main-searchContainer">
+            <button class="main-actionBt" id="main-search_open"><i class="fas fa-search fa-lg"></i></button>
+            <div class="main-action__modal main-search__modal">
+              <div class="search-Posdiv">
+                <div class="main-search-form" id="main-search-form">
+                  <form action="">
+                    <button><i class="fas fa-search fa-lg"></i></button>
+                    <input type="search" name="mainserch" id="mainserch" placeholder="검색하기.." />
+                    <button class="search-closeBt"><i class="fas fa-times"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-likeContainer">
+            <button class="main-actionBt"><i class="far fa-heart fa-lg"></i></button>
+            <div class="main-action__modal main-like__modal"></div>
+          </div>
+          <div class="main-bagContainer">
+            <button class="main-actionBt"><i class="fas fa-shopping-cart fa-lg"></i></button>
+            <div class="main-action__modal main-bag__modal"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="../js/hdft.js"></script>
+  </body>
+</html>

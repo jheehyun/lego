@@ -1,0 +1,116 @@
+.main-header {
+  width: 100%;
+  height: 80px;
+  background: #ffcf00;
+  display: flex;
+  justify-content: center;
+  font-family: "Gosanja";
+}
+.main-header .main-header__wrap {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  padding: 0 30px;
+}
+.main-header .main-header__wrap .header-logo {
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+.main-header .main-header__wrap .header-logo .header-logo img {
+  width: 100%;
+}
+.main-header .main-header__wrap .main-header__nav {
+  margin-left: 70px;
+  width: 50%;
+}
+.main-header .main-header__wrap .main-header__nav ul {
+  display: flex;
+  gap: 80px;
+}
+.main-header .main-header__wrap .main-header__nav ul li a {
+  display: block;
+  line-height: 80px;
+}
+.main-header .main-header__wrap .main-actionContainer {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.2rem;
+}
+.main-header .main-header__wrap .main-actionContainer > div {
+  width: 40px;
+  height: 40px;
+}
+.main-header .main-header__wrap .main-actionContainer > div > div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+.main-header .main-header__wrap .main-actionContainer > div button {
+  width: 100%;
+  height: 100%;
+}
+.main-header .main-header__wrap .main-actionContainer .main-searchContainer {
+  background: #fff;
+  border-radius: 50%;
+}
+.main-header .main-header__wrap .main-actionContainer .main-searchContainer .main-search__modal .search-Posdiv {
+  position: relative;
+  height: 80px;
+}
+.main-header .main-header__wrap .main-actionContainer .main-searchContainer .main-search__modal .search-Posdiv .main-search-form {
+  position: absolute;
+  top: 20px;
+  right: 155px;
+  width: 330px;
+  height: 40px;
+  background: #fff;
+  border-radius: 30px;
+}
+.main-header .main-header__wrap .main-actionContainer .main-searchContainer .main-search__modal .search-Posdiv .main-search-form form {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.main-header .main-header__wrap .main-actionContainer .main-searchContainer .main-search__modal .search-Posdiv .main-search-form form button {
+  padding: 10px;
+  width: 40px;
+}
+.main-header .main-header__wrap .main-actionContainer .main-searchContainer .main-search__modal .search-Posdiv .main-search-form form input {
+  width: calc(100% - 80px);
+}
+.main-header .main-header__wrap .main-actionContainer .main-searchContainer .main-search__modal .search-Posdiv .main-search-form form input:focus {
+  outline: none;
+}
+@media screen and (max-width: 1024px) {
+  .main-header {
+    height: 60px;
+  }
+  .main-header .main-header__wrap {
+    padding: 0 10px;
+  }
+  .main-header .main-header__wrap .header-logo {
+    width: 40px;
+    height: 40px;
+  }
+  .main-header .main-header__wrap .main-header__nav {
+    margin-left: 20px;
+  }
+  .main-header .main-header__wrap .main-header__nav ul li a {
+    line-height: 60px;
+  }
+}
+
+.footer {
+  position: relative;
+  padding: 0 30px;
+}
